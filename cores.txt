@@ -1,0 +1,2 @@
+vermelho-suave #C04242
+azul-suave #5A6EB6
