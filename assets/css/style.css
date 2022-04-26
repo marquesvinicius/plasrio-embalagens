@@ -193,6 +193,10 @@ h1 {
     text-align: right;
 }
 
+.item-texto strong {
+    font-weight: bold;
+}
+
 .item-texto:nth-child(1) {
     text-align: left;
 }
