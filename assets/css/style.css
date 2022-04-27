@@ -171,13 +171,25 @@ h1 {
 }
 
 .item-img{
-    min-width: 48%;
-    width: 100%;
+    max-width: 100%;
+    width: 33%;
     z-index: -1;
 }
 
-#precos .item-img{
+
+#precos { 
+    display: flex;
     justify-content: flex-start;
+}
+
+#atendimento {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#variedade {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .item-img:nth-child(1) {
@@ -188,6 +200,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
     font-weight: 400;
     font-size: 1.3em;
     text-align: right;
@@ -208,6 +223,7 @@ h1 {
 }
 
 .item-titulo {
+    white-space: nowrap;
     font-weight: 700;
     font-size: 2em;
     margin-right: 10rem;
@@ -304,6 +320,7 @@ h1 {
 
     .item-img {
         min-width: 100%;
+        max-height: 330px;
         align-self: center;
     }
 
@@ -315,7 +332,7 @@ h1 {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
     html {
         font-size: 16px;
@@ -328,6 +345,20 @@ h1 {
     .item {
         flex-wrap: wrap;
     }
+
+    #atendimento {
+        justify-content: center;
+    }
+
+    #variedade {
+        justify-content: center;
+    }
+
+    #precos {
+        justify-content: center;
+    }
+
+
 
     .item:first-child {
         flex-wrap: wrap-reverse;
@@ -362,6 +393,7 @@ h1 {
     .item-img {
         min-width: 100%;
         align-self: center;
+        max-height: 400px;
     }
 
     #precos .item-img{
