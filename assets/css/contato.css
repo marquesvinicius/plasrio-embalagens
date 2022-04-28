@@ -89,15 +89,15 @@ h1 {
 }
 
 .contato-item:nth-child(1):hover {
-    border: 10px #5A6EB6 solid;
+    border: 8px #5A6EB6 solid;
 }
 
 .contato-item:nth-child(2):hover {
-    border: 10px #C04242 solid;
+    border: 8px #5A6EB6 solid;
 }
 
 #localizacao-item:hover {
-    border: 10px #5A6EB6 solid;
+    border: 8px  #5A6EB6 solid;
 }
 
 @media screen and (max-width: 600px) {
