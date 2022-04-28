@@ -38,7 +38,8 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 21rem;
-    height: 17rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
     text-decoration: none;
     color: #000000;
     transition: 0.3s;
@@ -62,7 +63,9 @@ h1 {
 
 #localizacao-item {
     width: 45rem;
-    height: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: fit-content;
     margin-bottom: 6rem;
 }
 
@@ -88,18 +91,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.contato-item:nth-child(1):hover {
-    border: 8px #5A6EB6 solid;
-}
-
-.contato-item:nth-child(2):hover {
-    border: 8px #5A6EB6 solid;
-}
-
-#localizacao-item:hover {
-    border: 8px  #5A6EB6 solid;
-}
-
 @media screen and (max-width: 600px) {
     h1 {
         margin-top: 1.5rem;
@@ -120,11 +111,14 @@ h1 {
     .contato-item {
         margin-bottom: 1rem !important;
         width: 22rem !important;
+        padding-top: 1rem;
+        border: none;
+        border-bottom: 1px #000000 solid;
     }
 
     #localizacao-item {
         width: 21rem;
-        height: 23rem;
+        border-bottom: none;
     }
 
     #localizacao-texto-e-imagem {
@@ -140,8 +134,22 @@ h1 {
     #localizacao-img {
         width: 5.5rem;
         height: 4rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 731px) {
+    .contato-item:nth-child(1):hover {
+        border: 8px #5A6EB6 solid;
+    }
+    
+    .contato-item:nth-child(2):hover {
+        border: 8px #5A6EB6 solid;
+    }
+    
+    #localizacao-item:hover {
+        border: 8px  #5A6EB6 solid;
     }
 }
 
