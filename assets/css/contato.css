@@ -24,7 +24,7 @@ h1 {
 
 .telefone-email-itens {
     display: flex;
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
     justify-content: space-around;
     align-items: center;
