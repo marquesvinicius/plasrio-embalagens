@@ -1,0 +1,148 @@
+.conteudo-principal {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+h1 {
+    background-color: #C04242;
+    z-index: 1;
+    width: 100vw;
+    padding-top: 0.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.telefone-email-itens {
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.contato-item {
+    border: 1px #000000 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    height: 17rem;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.contato-titulo {
+    font-weight: 700;
+}
+
+.contato-item .contato-img {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contato-img {
+    width: 6rem;
+    height: 4.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#localizacao-item {
+    width: 45rem;
+    height: 20rem;
+    margin-bottom: 6rem;
+}
+
+#localizacao-texto-e-imagem {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+#localizacao-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#localizacao-maps {
+    height: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contato-item:nth-child(1):hover {
+    border: 10px #5A6EB6 solid;
+}
+
+.contato-item:nth-child(2):hover {
+    border: 10px #C04242 solid;
+}
+
+#localizacao-item:hover {
+    border: 10px #5A6EB6 solid;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        margin-top: 1.5rem;
+        background: none;
+        color: #000000;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .telefone-email-itens {
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+
+    .contato-item {
+        margin-bottom: 1rem !important;
+        width: 22rem !important;
+    }
+
+    #localizacao-item {
+        width: 21rem;
+        height: 23rem;
+    }
+
+    #localizacao-texto-e-imagem {
+        flex-direction: column;
+    }
+
+    #localizacao-maps {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    #localizacao-img {
+        width: 5.5rem;
+        height: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+

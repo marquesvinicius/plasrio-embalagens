@@ -1,0 +1,244 @@
+.conteudo-principal {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: #C04242;
+    z-index: 1;
+    width: 100vw;
+    padding-top: 0.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.itens-conteudo-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divisoria-azul {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #5A6EB6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.divisoria-vermelha {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #C04242;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.item-img{
+    max-width: 100%;
+    width: 33%;
+    z-index: -1;
+}
+
+
+#precos { 
+    display: flex;
+    justify-content: flex-start;
+}
+
+#atendimento {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#variedade {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item-img:nth-child(1) {
+    justify-content: flex-end;
+}
+
+.item-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.item-texto:nth-child(1) {
+    text-align: left;
+}
+
+.item-descricao {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 1.5rem;
+}
+
+.item-titulo {
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 2em;
+    margin-right: 10rem;
+    text-align: right;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#titulo-variedade {
+    text-align: left;
+    margin-left: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        display: none;
+    }
+
+
+    .item {
+        flex-wrap: wrap;
+    }
+
+    .item:first-child {
+        flex-wrap: wrap-reverse;
+    }
+
+    .item:last-child {
+        flex-wrap: wrap-reverse;
+    }
+
+    .item-titulo {
+        white-space: normal;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .item-texto {
+        justify-content: start;
+        width: 100%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .item-descricao {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #titulo-variedade {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .item-img {
+        min-width: 100%;
+        max-height: 330px;
+        align-self: center;
+    }
+
+    #precos .item-img{
+        min-width: 100%;
+        align-self: center;
+    }
+
+
+}
+
+@media screen and (max-width: 920px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+
+    .item {
+        flex-wrap: wrap;
+    }
+
+    #atendimento {
+        justify-content: center;
+    }
+
+    #variedade {
+        justify-content: center;
+    }
+
+    #precos {
+        justify-content: center;
+    }
+
+    .item:first-child {
+        flex-wrap: wrap-reverse;
+    }
+
+    .item:last-child {
+        flex-wrap: wrap-reverse;
+    }
+
+    .item-texto {
+        text-align: center;
+    }
+
+    .item-titulo {
+        white-space: normal;
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #titulo-variedade {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .item-descricao {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .item-img {
+        min-width: 100%;
+        align-self: center;
+        max-height: 400px;
+    }
+
+    #precos .item-img{
+        min-width: 100%;
+        align-self: center;
+    }
+
+}
