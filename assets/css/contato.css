@@ -141,15 +141,15 @@ h1 {
 
 @media screen and (min-width: 731px) {
     .contato-item:nth-child(1):hover {
-        border: 8px #5A6EB6 solid;
+        border: 6px #5A6EB6 solid;
     }
     
     .contato-item:nth-child(2):hover {
-        border: 8px #5A6EB6 solid;
+        border: 6px #5A6EB6 solid;
     }
     
     #localizacao-item:hover {
-        border: 8px  #5A6EB6 solid;
+        border: 6px  #5A6EB6 solid;
     }
 }
 
