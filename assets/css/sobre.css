@@ -24,8 +24,9 @@ h1 {
 .img-itens-lado {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 10vw;
-    padding-right: 10vw;
+    margin-right: 10vw;
 }
 
 
@@ -53,8 +54,8 @@ h1 {
 }
 
 .item-texto {
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -152,13 +153,31 @@ h1 {
 }
 
 @media screen and (max-width: 405px) {
+    .conteudo-principal {
+        font-size: 12px;
+    }
+
     .img-itens-lado {
         margin-left: 0;
-        padding-right: 0;
+        margin-right: 0;
     }
 
     .item {
-        margin-right: 8rem;
-        margin-left: 8rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itens-lado {
+        align-self: center;
+    }
+
+    .item-titulo {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .item-texto {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
