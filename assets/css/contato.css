@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 21rem;
+    width: 23rem;
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
     text-decoration: none;
