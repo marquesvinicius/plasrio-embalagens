@@ -6,6 +6,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     border-bottom: 1px #FFFFFF dotted;
+    width: 100%;
 }
 
 .logo {
@@ -15,7 +16,6 @@
 
 .menu-lista {
     display: flex;
-    
 }
 
 .menu-lista-item {
@@ -29,7 +29,7 @@
 .menu-lista-item-link {
     color: #FFFFFF;
     padding-right: 1rem;
-    font-size: 1em;
+    font-size: 1rem;
     text-decoration: none;
     text-transform: lowercase;
 }
@@ -41,8 +41,6 @@
 @media screen and (max-width: 600px) {
 
     .cabecalho {
-        background-color: #C04242;
-        display: flex;
         flex-direction: column;
         padding-bottom: 1rem;
         border: none;

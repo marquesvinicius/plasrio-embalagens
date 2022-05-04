@@ -15,7 +15,6 @@ h1 {
 
 .conteudo-principal {
     display: flex;
-    overflow-x: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -119,6 +118,13 @@ h1 {
 
 @media screen and (max-width: 860px) {
 
+    .logo-plasrio {
+        width: 50vw;
+        height: 35vw;
+        margin-top: 2rem;
+        object-fit: contain;
+    }
+
     .img-itens-lado {
         flex-direction: column;
     }
@@ -180,4 +186,27 @@ h1 {
         margin-left: 2rem;
         margin-right: 2rem;
     }
+}
+
+@media screen and (max-width: 390px) {
+    .img-itens-lado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    
+    .item-titulo {
+        margin-left: 0;        
+        margin-right:0;
+    }
+
+    .item-texto {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    
 }
